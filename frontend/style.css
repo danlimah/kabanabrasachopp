@@ -65,6 +65,7 @@ a, a:hover {
 
 textarea.form-control {
 	resize: none;
+	outline: none;
 }
 
 hr {

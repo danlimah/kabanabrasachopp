@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+/* 
+Programacao: Daniel Lima
+Contato: daniel@zimpbox.com
+www.zimpbox.com
+*/
+h1, h2, h3, h4, h5, h6, small, .lead {
+  font-family: "Lobster", cursive; }
+
+body {
+  font-family: "Inconsolata"; }
+
+.footer {
+  background: #781617;
+  color: rgba(255, 255, 255, 0.9); }
+  .footer strong, .footer address, .footer abbr, .footer .fa, .footer a, .footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6, .footer p {
+    color: rgba(255, 255, 255, 0.9); }
+  .footer h4:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.7); }
+  .footer .fa {
+    font-size: 21px;
+    margin-right: 10px; }
+    .footer .fa:hover {
+      color: orange; }
+  .footer .btn {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(0, 0, 0, 0.3); }
+
+.navbar {
+  background: transparent;
+  margin-top: -154px;
+  margin-bottom: 116px; }
+
+.onda_reversa {
+  background: url(../img/borda2.png) !important;
+  transform: rotate(180deg);
+  margin-top: -39px;
+  margin-bottom: 25px; }
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity; }
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0); }
+.carousel-fade .carousel-control {
+  z-index: 2; }
+
+.header {
+  background: url(../img/03.jpg);
+  background-size: cover;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  text-align: center; }
+  .header img {
+    width: 100%;
+    max-width: 200px;
+    padding: 20px; }
+
+.borda_ondas {
+  background: url(../img/borda.png);
+  background-repeat: repeat-x;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  z-index: 2; }
+
+#carousel-home {
+  position: relative;
+  z-index: 1; }
+
+.navbar-inverse .navbar-nav >
+.active > a, .navbar-inverse .navbar-nav >
+.active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav >
+.open >
+a, .navbar-inverse .navbar-nav >
+.open >
+a:hover, .navbar-inverse .navbar-nav >
+.open > a:focus {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8); }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-family: "Lobster", cursive;
+  border-bottom: 3px solid transparent; }
+  .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:active {
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8); }
+
+.navbar {
+  text-align: center; }
+
+.titulo_geral img {
+  margin-left: 15px; }
+
+@media screen and (max-width: 768px) {
+  .titulo_geral img {
+    margin-left: 15px; }
+
+  .navbar-inverse {
+    background: #781617; }
+
+  .navbar {
+    margin-top: -10px;
+    margin-bottom: 21px; }
+
+  .header img {
+    max-width: 150px; }
+
+  #carousel-home {
+    display: none; }
+
+  .navbar-inverse .navbar-toggle {
+    border-color: transparent; }
+
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background: orange; }
+
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #781617; }
+
+  .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:active {
+    color: #781617;
+    background: orange !important;
+    font-size: 20px;
+    font-family: "Lobster", cursive;
+    background: orange;
+    border-bottom: 3px solid orange; } }
+.white_menu {
+  color: #ffffff; }
+
+#carousel-home {
+  border-bottom: 5px solid #781617; }
+
+.section_cardapio {
+  margin-top: -23px; }
+
+.caption .fa {
+  color: orange;
+  margin-right: 7px; }
+
+.titulo_geral img {
+  max-width: 251px; }
+
+.thumbnail {
+  padding: 10px;
+  box-shadow: 4px 4px 0 #c3c3c3; }
+  .thumbnail .caption {
+    padding: 10px; }
+    .thumbnail .caption small {
+      font-family: "Inconsolata";
+      border-right: 5px solid #fff; }
+    .thumbnail .caption p:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      margin-top: 10px;
+      background: orange; }
+  .thumbnail h2 {
+    font-size: 49px;
+    margin-top: -52px;
+    color: #ffffff; }
+
+@media screen and (max-width: 1200px) {
+  .footer .col-lg-4 {
+    margin-bottom: 90px; }
+  .footer .pull-right {
+    float: left !important; } }
+
+/*# sourceMappingURL=site.css.map */

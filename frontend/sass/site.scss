@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700"); 
+// font-family: 'Inconsolata', ;
+
+@import url(https://fonts.googleapis.com/css?family=Lobster); 
+// font-family: 'Lobster', cursive;
+
+/* 
+Programacao: Daniel Lima
+Contato: daniel@zimpbox.com
+www.zimpbox.com
+*/
+
+// Variaveis
+$paleta: #781617;
+$br: #ffffff;
+$pt: #000000;
+$fonte1: 'Lobster', cursive;
+$fonte2: 'Inconsolata', ;
+// Fim: Variaveis
+
+h1, h2, h3, h4, h5, h6, small,  .lead {
+	font-family: $fonte1;
+}
+
+body {
+	font-family: $fonte2;
+}
+
+.footer {
+	background: $paleta;
+    color: rgba(255,255,255,.9);
+	strong, address, abbr, .fa, a, h1, h2, h3, h4, h5, h6, p {
+		color: rgba(255,255,255,.9)
+	}
+    h4 {
+        &:after {
+          content: '';
+          display: block;
+          width: 50px;
+          height: 3px;
+          margin-top: 10px;
+          background: rgba(255,255,255,.7);
+        }
+    }
+
+    .fa {
+        font-size: 21px;
+        margin-right: 10px;
+        &:hover {
+            color: orange;
+        }
+    }
+
+    .btn {
+        padding-left: 10px;
+        padding-right: 10px;
+        background: rgba(0,0,0,.3);
+    }
+}
+
+.navbar {
+    background: transparent;
+    margin-top: -154px;
+    margin-bottom: 116px;
+}
+
+.onda_reversa {
+    background: url(../img/borda2.png) !important;
+    transform: rotate(180deg);
+    margin-top: -39px;
+    margin-bottom: 25px;
+}
+
+// Carousel Fade Transition
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
+}
+// Fim: Carousel Fade Transition
+
+.header {
+    background: url(../img/03.jpg);
+    background-size: cover;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+    text-align: center;
+    img {
+        width: 100%;
+        max-width: 200px;
+        padding: 20px;
+    }
+}
+
+.borda_ondas {
+    background: url(../img/borda.png);
+    background-repeat: repeat-x;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+#carousel-home {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-inverse .navbar-nav > 
+.active > a, .navbar-inverse .navbar-nav > 
+.active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > 
+.open > 
+a, .navbar-inverse .navbar-nav > 
+.open > 
+a:hover, .navbar-inverse .navbar-nav > 
+.open > a:focus {
+    background: transparent;
+    color: rgba(255,255,255,.8);
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: rgba(255,255,255,.8);
+    font-size: 20px;
+    font-family: $fonte1;
+    border-bottom: 3px solid transparent;
+    &:hover, &:focus, &:active {
+        color: rgba(255,255,255,.8);
+        border-bottom: 3px solid rgba(255,255,255,.8);
+    }
+}
+
+.navbar {
+    text-align: center;
+}
+
+.titulo_geral img {
+        margin-left: 15px;
+    }
+
+@media screen and (max-width: 768px) {
+
+    .titulo_geral img {
+        margin-left: 15px;
+    }
+    .navbar-inverse {
+        background: $paleta;
+    }
+
+    .navbar {
+        margin-top: -10px;
+        margin-bottom: 21px;
+    }
+
+    .header {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    #carousel-home {
+        display: none;
+    }
+
+    .navbar-inverse .navbar-toggle {
+        border-color: transparent;
+    }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+        background: orange;
+    }
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: $paleta;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+
+        &:hover, &:focus, &:active {
+            color: $paleta;
+            background: orange !important;
+            font-size: 20px;
+            font-family: "Lobster", cursive;
+            background: orange;
+            border-bottom: 3px solid orange;
+        }
+    }
+}
+
+.white_menu {
+    color: $br;
+}
+
+#carousel-home {
+    border-bottom: 5px solid $paleta;
+}
+
+.section_cardapio {
+    margin-top: -23px;
+
+    
+
+}
+
+.caption {
+    .fa {
+        color: orange;
+        margin-right: 7px;
+    }
+}
+
+.titulo_geral {
+    img {
+        max-width: 251px;
+    }
+}
+
+.thumbnail {
+    padding: 10px;
+    box-shadow: 4px 4px 0 #c3c3c3;
+
+    .caption {
+        padding: 10px;
+        small {
+            font-family: $fonte2;
+            border-right: 5px solid #fff;
+        }
+        p {
+            &:after {
+                content: '';
+                  display: block;
+                  width: 50px;
+                  height: 3px;
+                  margin-top: 10px;
+                  background: orange;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 49px;
+        margin-top: -52px;
+        color: #ffffff;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        .col-lg-4 {
+            margin-bottom: 90px;
+        }
+        .pull-right {
+            float: left !important;
+        }
+    }
+}
